@@ -1,4 +1,3 @@
-
 # Calculator
 
 A small practice project built with **HTML, CSS, and JavaScript**.
@@ -28,17 +27,21 @@ This project is created for practicing basic JavaScript concepts by building a s
 ## JavaScript Concepts & Methods Used
 
 ### DOM Manipulation
+
 - `getElementById()`
 - `querySelectorAll()`
 
 ### Event Handling
+
 - `addEventListener()`
 - `dataset`
 
 ### Array Methods
+
 - `forEach()`
 
 ### String Methods
+
 - `slice()`
 - `split()`
 - `pop()`
@@ -46,12 +49,14 @@ This project is created for practicing basic JavaScript concepts by building a s
 - `match()`
 
 ### Number Methods & Functions
+
 - `Number()`
 - `toFixed()`
 - `toString()`
 - `isFinite()`
 
 ### Other JavaScript Concepts
+
 - Conditional Statements (`if...else`)
 - Error Handling (`try...catch`)
 - Regular Expressions (RegEx)

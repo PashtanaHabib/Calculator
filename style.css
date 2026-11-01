@@ -1,184 +1,169 @@
-
 /* =========================
    1. RESET
 ========================= */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 /* =========================
    2. BODY
 ========================= */
 
 body {
-    min-height: 100vh;
+  min-height: 100vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    background-color: #C98200;
+  background-color: #c98200;
 
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 
 /* =========================
    3. CALCULATOR
 ========================= */
 
 .calculator {
-    width: 370px;
+  width: 370px;
 
-    padding: 22px;
+  padding: 22px;
 
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 
-    border-radius: 9px;
+  border-radius: 9px;
 
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
-
 
 /* =========================
    4. DISPLAY
 ========================= */
 
 #display {
-    width: 100%;
-    height: 62px;
+  width: 100%;
+  height: 62px;
 
-    margin-bottom: 22px;
-    padding: 10px 16px;
+  margin-bottom: 22px;
+  padding: 10px 16px;
 
-    border: 2px solid #333333;
-    border-radius: 40px;
+  border: 2px solid #333333;
+  border-radius: 40px;
 
-    outline: none;
+  outline: none;
 
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 
-    color: #333333;
+  color: #333333;
 
-    font-size: 27px;
-    text-align: right;
+  font-size: 27px;
+  text-align: right;
 }
-
 
 /* =========================
    5. BUTTONS GRID
 ========================= */
 
 .buttons {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 
-    gap: 16px;
-    padding: 0 10px;
+  gap: 16px;
+  padding: 0 10px;
 }
-
 
 /* =========================
    6. ALL BUTTONS
 ========================= */
 
 button {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 
-    border: 1px solid transparent;
-    border-radius: 50%;
+  border: 1px solid transparent;
+  border-radius: 50%;
 
-    background-color: #F1F1F1;
+  background-color: #f1f1f1;
 
-    color: #222222;
+  color: #222222;
 
-    font-size: 18px;
+  font-size: 18px;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-
 
 /* =========================
    7. OPERATOR BUTTONS
 ========================= */
 
 .operator {
-    color: #BD913D;
+  color: #bd913d;
 }
-
-
 
 /* Hover for number buttons */
 
 button:not(.operator):hover {
-    background-color: #171717;
-    color: #E0E3E6;
-    border-color: #171717;
+  background-color: #171717;
+  color: #e0e3e6;
+  border-color: #171717;
 }
-
 
 /* Hover for operator buttons */
 
 .operator:hover {
-    background-color: #BD913D;
-    color: #FFFFFF;
-    border-color: #BD913D;
+  background-color: #bd913d;
+  color: #ffffff;
+  border-color: #bd913d;
 }
-
-
 
 /* =========================
    9. EQUAL BUTTON
 ========================= */
 
 .equal {
-    grid-column: span 2;
+  grid-column: span 2;
 
-    width: 100%;
+  width: 100%;
 
-    border-radius: 18px;
+  border-radius: 18px;
 }
-
 
 /* =========================
    10. BUTTON ACTIVE
 ========================= */
 
 button:active {
-    transform: scale(0.93);
+  transform: scale(0.93);
 }
-
 
 /* =========================
    11. RESPONSIVE DESIGN
 ========================= */
 
 @media (max-width: 420px) {
+  .calculator {
+    width: 90%;
+    padding: 18px;
+  }
 
-    .calculator {
-        width: 90%;
-        padding: 18px;
-    }
+  .buttons {
+    gap: 12px;
+    padding: 0 5px;
+  }
 
-    .buttons {
-        gap: 12px;
-        padding: 0 5px;
-    }
+  button {
+    width: 100%;
+    height: 55px;
+  }
 
-    button {
-        width: 100%;
-        height: 55px;
-    }
-
-    .equal {
-        width: 100%;
-    }
+  .equal {
+    width: 100%;
+  }
 }
